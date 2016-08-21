@@ -48,7 +48,7 @@ public class ConsumerServiceImpl extends Thread implements ConsumerService {
                 store.notify();
 
                 if(msg != null){
-                    System.out.println(this.name + " -> " + msg);
+                    System.out.println(this.name + " <- " + msg);
                 }
             }
         }
